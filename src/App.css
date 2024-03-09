@@ -1,0 +1,361 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.Auth-page-css {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  --tw-bg-opacity: 1;
+  background-color: rgba(236, 253, 245, var(--tw-bg-opacity));
+}
+.Authentication-box {
+  width: 60%;
+  height: 80%;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  padding: 5px;
+  border-radius: 5px;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+}
+.Authentication-box :is(svg) {
+  width: 18.5px;
+  height: auto;
+  fill: gray;
+}
+
+.Authentication-box .box-one {
+  --tw-bg-opacity: 1;
+  background-color: rgba(209, 250, 229, var(--tw-bg-opacity));
+  border-radius: 5px;
+  margin-right: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.Authentication-box .box-one h3 {
+  text-align: start;
+  width: 50%;
+}
+.Authentication-box .box-one h1 {
+  font-size: clamp(2em, calc(30% / 2rem + 10px), auto);
+  margin: 10px 0 1rem 0;
+  font-family: "Archivo Black", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.Authentication-box .box-one div {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  column-gap: 10px;
+}
+
+.Authentication-box .box-one :is(button) {
+  width: calc(100% / 2);
+  height: 2.5rem;
+  border-radius: 10px;
+  font-size: 1em;
+  transition: all 300ms ease-in-out;
+}
+.Authentication-box .box-one :is(button):active {
+  transform: translateY(3px);
+}
+.Register {
+  --tw-bg-opacity: 1;
+  background-color: rgba(6, 78, 59, var(--tw-bg-opacity));
+  color: white;
+  border: none;
+}
+
+.Login {
+  --tw-bg-opacity: 1;
+  background-color: rgba(239, 246, 255, var(--tw-bg-opacity));
+  color: black;
+  border: 1px solid rgba(0, 0, 0, 0.75);
+}
+.Authentication-box .box-two {
+  width: 100%;
+  height: 100%;
+  display: block;
+  --tw-bg-opacity: 1;
+  background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+  position: relative;
+}
+
+.Authentication-box :is(.User-form-container) {
+  position: absolute;
+  inset: 0;
+}
+.registration-form {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  display: block;
+  background-color: rgb(4 47 46);
+  color: white;
+  overflow: auto;
+}
+.registration-form h1 {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.registration-form ul {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  margin-top: 10%;
+}
+
+.registration-form ul li {
+  width: 60%;
+  height: auto;
+  padding: 1.5px 0;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.registration-form ul li label {
+  position: absolute;
+  top: 30%;
+  left: 2.5%;
+}
+
+.registration-form :is(input:focus) {
+  outline: none;
+}
+.registration-form :is(input) {
+  font-size: 0.9em;
+}
+
+.registration-form
+  :is(input[type="text"], input[type="password"], input[type="email"]) {
+  padding: 12.5px 0;
+  text-indent: 10%;
+  background-color: rgb(240 253 244);
+  border: none;
+  border-bottom: 1px solid white;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.registration-form :is(input[type="submit"], button) {
+  width: calc(100% / 2);
+  object-position: center;
+  height: 3rem;
+  border-radius: 20px;
+  background: none;
+  color: white;
+}
+.registration-form :is(button) {
+  border: 1px solid white;
+  color: white;
+  margin-top: 10px;
+}
+.registration-form :is(input[type="submit"]) {
+  background-color: tomato;
+  border: none;
+}
+.signin-option {
+  align-items: center;
+}
+
+.loging--page {
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-color: rgb(240 253 244);
+  overflow: hidden;
+}
+
+.loging--page :is(form) {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loging--page :is(form ul) {
+  width: 70%;
+  height: auto;
+}
+.loging--page :is(form ul li) {
+  width: 100%;
+  height: auto;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.loging--page
+  :is(form ul li :is(input[type="text"]:focus, input[type="password"]:focus)) {
+  outline: none;
+}
+.loging--page :is(form ul li :is(input[type="text"], input[type="password"])) {
+  flex: 1;
+  border-radius: 10px;
+  height: 3rem;
+  text-indent: 10%;
+  border: none;
+  background-color: rgb(250 250 250);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.loging--page :is(form ul li :is(label)) {
+  position: absolute;
+  left: 2.5%;
+}
+.loging--page :is(form ul li div) {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.loging--page :is(form ul li div span) {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  column-gap: 1.5%;
+}
+
+.loging--page :is(form ul li :is(input[type="submit"], button)) {
+  width: calc(100% / 2.5);
+  height: 3rem;
+  border-radius: 20px;
+  border: 1px solid rgba(40, 172, 84, 0.25);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  font-size: 1em;
+  transition: all 300ms ease-in-out;
+}
+.loging--page :is(form ul li :is(input[type="submit"])) {
+  background-color: rgb(250 250 250);
+  color: black;
+}
+.loging--page :is(form ul li :is(button)) {
+  background-color: tomato;
+  color: white;
+}
+.loging--page :is(form ul li :is(input[type="submit"]:active, button:active)) {
+  transform: translateY(3px);
+}
+.loging--page :is(form ul li :is(.show-hide-password)) {
+  position: absolute;
+  left: 92%;
+}
+.registration-form :is(form ul li :is(.show-hide-confirmPass)) {
+  position: absolute;
+  top: 30%;
+  left: 90%;
+}
+
+@media (240px <= width <= 840px) {
+  .Authentication-box {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .Authentication-box .box-one {
+    padding: 0 5px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .Authentication-box .box-one h3 {
+    display: none;
+  }
+  .Auth-page-css {
+    display: block;
+  }
+  .registration-form {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+  .registration-form ul {
+    width: 100%;
+    height: 100%;
+    margin-top: 0%;
+  }
+
+  .registration-form ul li {
+    width: 100%;
+    margin: 0.5px 0;
+  }
+  .registration-form :is(input[type="submit"], button) {
+    width: calc(100%);
+    height: 2.25rem;
+    border-radius: 10px;
+  }
+  .registration-form ul li div {
+    font-size: 13px;
+  }
+  .registration-form h1 {
+    margin-top: 10px;
+  }
+  .loging--page :is(form ul) {
+    width: 100%;
+  }
+}
+@media (840px <= width <= 1440px) {
+  .Authentication-box {
+    width: 100%;
+    height: 100%;
+  }
+
+  .registration-form ul li {
+    width: 80%;
+    margin: 2.5px 0;
+  }
+}
+
+.app--mainpage {
+  width: 100vw;
+  height: 100vh;
+  padding: 10px;
+  position: relative;
+}
+
+.app--header {
+  width: 100%;
+  height: 7.25%;
+  color: white;
+}
+.Navigation--section {
+  width: 12%;
+  height: 93%;
+  background-color: rgb(204 251 241);
+  display: flex;
+  flex-direction: column;
+  margin-top: 2.5px;
+}
+.nav--children {
+  position: absolute;
+  top: 8.5%;
+  left: 12.5%;
+  display: flex;
+  width: 87%;
+  height: 91.15%;
+  border: 1px solid black;
+}

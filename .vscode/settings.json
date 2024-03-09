@@ -1,0 +1,20 @@
+{
+  "typescript.implementationsCodeLens.showOnInterfaceMethods": false,
+  "notebook.diff.ignoreMetadata": false,
+  "gitlens.telemetry.enabled": true,
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "colorize.languages": [
+    "css",
+    "sass",
+    "scss",
+    "less",
+    "postcss",
+    "sss",
+    "stylus",
+    "xml",
+    "svg"
+  ],
+  "liveServer.settings.CustomBrowser": null
+}
